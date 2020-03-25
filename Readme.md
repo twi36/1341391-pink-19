@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Мишина](https://up.htmlacademy.ru/adaptive/19/user/1341391).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина] (https://htmlacademy.ru/profile/id1217273).
 
 ---
 
