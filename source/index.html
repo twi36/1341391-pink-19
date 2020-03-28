@@ -2,11 +2,83 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Приложение PINK</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-title visually-hidden">Приложение PINK</h1>
+      <section class="introduction">
+        <div class="introduction__wrapper">
+          <h2 class="introduction__title visually-hidden">Ссылки на скачивание приложения PINK</h2>
+          <p class="introduction__slogan">Взгляните на жизнь иначе!</p>
+          <img class="introduction__app-image" src="img/iphone-5-in-hand.png" width="320" height="314" alt="Приложение PINK на экране iPhone 5">
+          <ul class="introduction__list download-list">
+            <li class="download-list__item download-list__item--current">
+              <a href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+            </li>
+            <li class="download-list__item download-list__item--Apple">
+              <a href="https://www.apple.com/ru/ios/app-store/">App Store</a>
+            </li>
+            <li class="download-list__item download-list__item--Android">
+              <a href="https://play.google.com/store">Google Play</a>
+            </li>
+            <li class="download-list__item download-list__item--Windows">
+              <a href="https://www.microsoft.com/ru-ru/store/apps/windows">Microsoft Store</a>
+            </li>
+          </ul>
+          <p class="introduction__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__wrapper">
+          <h2 class="features__title visually-hidden">Возможности приложения PINK</h2>
+          <div class="features__description">
+            <p>Устали от серости мегаполиса?</p>
+            <p>Нам есть, что вам предложить!</p>
+          </div>
+          <ul class="features__list feature-list">
+            <li class="feature-list__item item-feature">
+              <h3 class="item-feature__title">Поднимает настроение</h3>
+              <p class="item-feature__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <img class="item-feature__feature-image item-feature__feature-image--1" src="img/iphone-screen-1.png" width="157" height="320" alt="Экран iPhone 5">
+            </li>
+            <li class="feature-list__item item-feature">
+              <h3 class="item-feature__title">Меняет мир вокруг</h3>
+              <p class="item-feature__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <img class="item-feature__feature-image item-feature__feature-image--2" src="img/iphone-screen-2.png" width="157" height="320" alt="Экран iPhone 5">
+            </li>
+            <li class="feature-list__item item-feature">
+              <h3 class="item-feature__title">Заводит новых друзей</h3>
+              <p class="item-feature__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <img class="item-feature__feature-image item-feature__feature-image--3" src="img/iphone-screen-3.png" width="157" height="320" alt="Экран iPhone 5">
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
