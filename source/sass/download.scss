@@ -1,0 +1,71 @@
+.download {
+  background-color: #121936;
+}
+
+.download__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  width: 280px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.download__item {
+  width: 25%;
+}
+
+.download__item--main-store {
+  width: 100%;
+  margin: auto;
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+
+.button-bordered {
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  padding: 15px 40px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.download__link {
+  display: block;
+}
+
+.download__link--apple {
+  width: 47px;
+  height: 56px;
+  background: url("../img/logo-apple.svg") no-repeat;
+}
+
+.download__link--android {
+  width: 43px;
+  height: 47px;
+  background: url("../img/logo-android.svg") no-repeat;
+}
+
+.download__link--windows {
+  width: 44px;
+  height: 41px;
+  background: url("../img/logo-microsoft.svg") no-repeat;
+}
+
+.download__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+
+  margin-right: 40px;
+  margin-left: 40px;
+  padding-bottom: 35px;
+}

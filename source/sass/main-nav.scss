@@ -1,0 +1,20 @@
+.main-nav {
+  box-sizing: content-box;
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -40px;
+  right: 20px;
+
+  width: 50px;
+  height: 24px;
+
+  border: 0;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-color: #283645;
+
+  cursor: pointer;
+}
