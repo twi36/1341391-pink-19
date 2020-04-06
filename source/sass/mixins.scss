@@ -1,0 +1,23 @@
+@mixin container {
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font($font-size: 18px, $line-height: 24px, $font-weight: 400, $color: #283645) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}

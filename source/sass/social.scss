@@ -1,0 +1,23 @@
+.social__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 70px;
+  margin-bottom: 40px;
+  margin-left: 70px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+}
+
+.social__link path {
+  fill: #d22856;
+}

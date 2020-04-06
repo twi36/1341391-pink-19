@@ -1,7 +1,14 @@
 .page-main {
-  margin-right: auto;
-  margin-left: auto;
-  width: 320px;
+  @include container;
   position: relative;
   top: -85px;
+}
+
+.page-title {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  @include font(24px, 32px, 300, #ffffff);
+  text-align: center;
+  padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }

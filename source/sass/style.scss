@@ -1,4 +1,5 @@
 @import "fonts.scss";
+@import "mixins.scss";
 @import "global.scss";
 @import "page-header.scss";
 @import "main-nav.scss";
@@ -7,3 +8,9 @@
 @import "introduction.scss";
 @import "download.scss";
 @import "features.scss";
+
+@import "user-photos.scss";
+@import "photos.scss";
+@import "page-footer.scss";
+@import "social.scss";
+@import "copyright.scss";

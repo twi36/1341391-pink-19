@@ -1,11 +1,9 @@
 .download {
-  background-color: #121936;
+  background-color: #1d2631;
 }
 
 .download__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset;
   margin-left: 20px;
   width: 280px;
 
@@ -29,16 +27,14 @@
 .button-bordered {
   border: 3px solid #ffffff;
   border-radius: 30px;
-  padding: 15px 40px;
+  padding: 15px 30px;
 
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #ffffff;
+  @include font(18px, 18px, 700, #ffffff);
 }
 
 .download__link {
   display: block;
+  text-align: center;
 }
 
 .download__link--apple {
@@ -60,10 +56,7 @@
 }
 
 .download__description {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 300;
-  color: #ffffff;
+  @include font(14px, 24px, 300, #ffffff);
 
   margin-right: 40px;
   margin-left: 40px;

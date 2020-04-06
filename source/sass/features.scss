@@ -3,19 +3,15 @@
 }
 
 .features__text {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 300;
-  color: #283645;
+  @include font(24px, 32px, 300, #283645);
   text-align: center;
 }
 
 .features__list {
+  background: url("../img/bg-triangle-white.svg") no-repeat top left;
   background-color: #f2f2f2;
 
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 }
 
 .item-feature {
@@ -25,18 +21,12 @@
 }
 
 .item-feature__title {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
+  @include font(18px, 24px, 700, #000000);
   text-align: center;
 }
 
 .item-feature__description {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #283645;
+  @include font(14px, 24px, 400, #283645);
   text-align: center;
 }
 
