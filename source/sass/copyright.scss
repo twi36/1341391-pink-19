@@ -12,10 +12,19 @@
 }
 
 .copyright__link {
-  width: 27px;
-  height: 34px;
-}
+  width: 40px;
 
-.copyright__link path {
-  fill: #d22856;
+  & path {
+    fill: #d22856;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
 }

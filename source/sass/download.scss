@@ -4,7 +4,9 @@
 
 .download__list {
   @include list-reset;
-  margin-left: 20px;
+  margin-right: auto;
+  margin-bottom: 24px;
+  margin-left: auto;
   width: 280px;
 
   display: flex;
@@ -30,6 +32,19 @@
   padding: 15px 30px;
 
   @include font(18px, 18px, 700, #ffffff);
+
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: #ffffff;
+  }
 }
 
 .download__link {
@@ -57,8 +72,9 @@
 
 .download__description {
   @include font(14px, 24px, 300, #ffffff);
+  text-align: center;
 
   margin-right: 40px;
   margin-left: 40px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 }

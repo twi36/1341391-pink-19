@@ -2,8 +2,14 @@
   background-color: #ffffff;
 }
 
+.features__description {
+  margin-top: 40px;
+}
+
 .features__text {
-  @include font(24px, 32px, 300, #283645);
+  padding-bottom: 8px;
+
+  @include font(24px, 28px, 300, #283645);
   text-align: center;
 }
 
@@ -15,9 +21,9 @@
 }
 
 .item-feature {
-  padding-top: 20px;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .item-feature__title {

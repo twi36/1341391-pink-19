@@ -2,24 +2,18 @@
   @include list-reset;
 }
 
-.photos__item {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-
-}
-
 .photos__item--current {
   position: relative;
-  margin-right: 0;
-  margin-left: 0;
 }
 
 .photos__of-the-day {
   position: absolute;
   top: 0;
   right: 20px;
-  padding: 10px;
+  padding-top: 6px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+  padding-left: 20px;
   background-color: #d22856;
   @include font(12px, 24px, 700, #ffffff);
   text-transform: uppercase;
@@ -27,6 +21,8 @@
 
 .photos__image {
   text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .photos__image--current {
@@ -36,12 +32,19 @@
 
 .photos__info {
   background-color: #f2f2f2;
-  padding: 13px;
+  padding-top: 12px;
+  padding-right: 10px;
+  padding-bottom: 16px;
+  padding-left: 17px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .photos__author {
   @include font(14px, 24px, 700, #283645);
   text-align: left;
+  margin: 0;
+  margin-top: 15px;
 }
 
 .photos__upload-time {
@@ -52,6 +55,8 @@
 .photos__description {
   @include font(14px, 24px, 400, #283645);
   text-align: left;
+  margin: 0;
+  padding-bottom: 10px;
 }
 
 .photos__likes {
@@ -59,7 +64,7 @@
   @include font(12px, 24px, 400, #d22856);
   text-align: left;
   text-transform: uppercase;
-  padding-left: 20px;
+  padding-left: 32px;
 
   &::before {
     content: "";

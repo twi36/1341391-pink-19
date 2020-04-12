@@ -3,7 +3,10 @@
 }
 
 .user-photos__description {
-  padding: 35px;
+  padding-top: 30px;
+  padding-right: 35px;
+  padding-bottom: 34px;
+  padding-left: 35px;
 
   @include font(14px, 30px, 400, #283645);
   text-align: center;
