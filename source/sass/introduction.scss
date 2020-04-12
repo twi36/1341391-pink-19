@@ -1,0 +1,12 @@
+.introduction {
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0 176px,
+              url("../img/bg-back-mobile@1x.jpg") no-repeat;
+}
+
+.introduction__slogan {
+  @include font(24px, 28px, 300, #ffffff);
+  text-align: center;
+  padding: 20px;
+  padding-top: 90px;
+  margin-bottom: 296px;
+}

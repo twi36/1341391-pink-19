@@ -1,0 +1,80 @@
+.download {
+  background-color: #1d2631;
+}
+
+.download__list {
+  @include list-reset;
+  margin-right: auto;
+  margin-bottom: 24px;
+  margin-left: auto;
+  width: 280px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.download__item {
+  width: 25%;
+}
+
+.download__item--main-store {
+  width: 100%;
+  margin: auto;
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+
+.button-bordered {
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  padding: 15px 30px;
+
+  @include font(18px, 18px, 700, #ffffff);
+
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: #ffffff;
+  }
+}
+
+.download__link {
+  display: block;
+  text-align: center;
+}
+
+.download__link--apple {
+  width: 47px;
+  height: 56px;
+  background: url("../img/logo-apple.svg") no-repeat;
+}
+
+.download__link--android {
+  width: 43px;
+  height: 47px;
+  background: url("../img/logo-android.svg") no-repeat;
+}
+
+.download__link--windows {
+  width: 44px;
+  height: 41px;
+  background: url("../img/logo-microsoft.svg") no-repeat;
+}
+
+.download__description {
+  @include font(14px, 24px, 300, #ffffff);
+  text-align: center;
+
+  margin-right: 40px;
+  margin-left: 40px;
+  padding-bottom: 30px;
+}

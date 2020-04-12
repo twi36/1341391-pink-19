@@ -1,0 +1,25 @@
+.main-nav {
+  box-sizing: content-box;
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -47px;
+  right: 20px;
+
+  border: 0;
+  background-color: #283645;
+
+  cursor: pointer;
+
+  &:hover path,
+  &:focus path {
+    fill: #d22856;
+  }
+
+  &:active {
+    color: #d22856;
+    opacity: 0.3;
+  }
+}

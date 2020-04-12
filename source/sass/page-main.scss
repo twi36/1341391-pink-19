@@ -1,0 +1,13 @@
+.page-main {
+  @include container;
+  margin-top: -92px;
+}
+
+.page-title {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  @include font(24px, 28px, 300, #ffffff);
+  text-align: center;
+  padding: 20px;
+  padding-top: 106px;
+  padding-bottom: 84px;
+}
