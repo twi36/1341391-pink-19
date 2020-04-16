@@ -1,0 +1,36 @@
+.rates-options {
+  @include list-reset;
+}
+
+.rates-options__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+}
+
+.rates-options__name {
+  @include font(14px, 30px, 400, #283645);
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 1px;
+  padding-left: 22px;
+}
+
+.rates-options__value {
+  padding-right: 15px;
+}
+
+.rates-options__value--on {
+  background: url("../img/icon-yes.svg") no-repeat;
+  width: 31px;
+  height: 21px;
+}
+
+.rates-options__value--off {
+  background: url("../img/icon-no.svg") no-repeat;
+  width: 27px;
+  height: 26px;
+}

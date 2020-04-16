@@ -1,0 +1,35 @@
+.button-bordered {
+  display: block;
+  text-align: center;
+
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  padding: 15px 30px;
+}
+
+.button-colored {
+  display: block;
+  border: none;
+  border-radius: 2px;
+  padding: 16px 45px;
+  background-color: #2aab6d;
+  @include font(18px, 30px, 700, #ffffff);
+  text-align: center;
+  text-transform: uppercase;
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}

@@ -1,5 +1,16 @@
 .download {
   background-color: #1d2631;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -285px;
+    left: 0;
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+    width: 320px;
+    height: 314px;
+  }
 }
 
 .download__list {
@@ -26,10 +37,9 @@
   margin-bottom: 32px;
 }
 
-.button-bordered {
-  border: 3px solid #ffffff;
-  border-radius: 30px;
-  padding: 15px 30px;
+.download__link {
+  display: block;
+  text-align: center;
 
   @include font(18px, 18px, 700, #ffffff);
 
@@ -45,11 +55,6 @@
     color: rgba(210, 40, 86, 0.3);
     background-color: #ffffff;
   }
-}
-
-.download__link {
-  display: block;
-  text-align: center;
 }
 
 .download__link--apple {

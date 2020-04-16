@@ -1,0 +1,25 @@
+.comment-fields {
+  padding-top: 80px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.comment-fields__input {
+  display: block;
+  @include font(18px, 30px, 400, #283645);
+  text-align: left;
+  border: 2px solid #e5e5e5;
+  padding-top: 14px;
+  padding-right: 18px;
+  padding-bottom: 32px;
+  padding-left: 18px;
+  margin-bottom: 17px;
+  width: 280px;
+  box-sizing: border-box;
+  resize: none;
+
+  &::placeholder {
+    color: #283645;
+  }
+}

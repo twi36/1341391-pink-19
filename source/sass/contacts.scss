@@ -1,0 +1,27 @@
+.contacts {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  padding-top: 52px;
+}
+
+.contacts__description {
+  @include font(24px, 28px, 300, #283645);
+  margin-bottom: 40px;
+}
+
+.contacts__item {
+  margin-bottom: 26px;
+}
+
+.contacts__text {
+  @include font(18px, 14px, 700, #283645);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.contacts__value {
+  @include font(24px, 24px, 300, #d22856);
+  font-style: normal;
+  margin-bottom: 8px;
+}
