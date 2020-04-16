@@ -1,0 +1,27 @@
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #283645;
+  opacity: 0.3;
+  padding: 0;
+  border: none;
+}
+
+.slider__toggle--active {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 0;
+  border: 3px solid #283645;
+}
+
+.slider__toggles {
+  text-align: center;
+}
+
+.slider__toggle {
+  margin-right: 8px;
+  margin-left: 8px;
+}

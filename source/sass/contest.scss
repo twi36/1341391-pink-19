@@ -1,0 +1,26 @@
+.contest {
+  background-color: #ffffff;
+}
+
+.contest__description {
+  @include font(14px, 30px, 400, #283645);
+  text-align: center;
+  margin-top: 45px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.contest-form__button {
+  margin-bottom: 36px;
+}
+
+.contest-form__note {
+  text-align: center;
+  @include font(14px, 30px, 400, #283645);
+  text-transform: uppercase;
+}
+
+.contest-form__note--color {
+  color: #d22856;
+}

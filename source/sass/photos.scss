@@ -2,6 +2,10 @@
   @include list-reset;
 }
 
+.photos__item {
+  margin-bottom: 20px;
+}
+
 .photos__item--current {
   position: relative;
 }
@@ -19,10 +23,12 @@
   text-transform: uppercase;
 }
 
-.photos__image {
+.photos__image-block {
   text-align: center;
-  margin-right: 20px;
-  margin-left: 20px;
+}
+
+.photos__image {
+  vertical-align: top;
 }
 
 .photos__image--current {
@@ -44,7 +50,7 @@
   @include font(14px, 24px, 700, #283645);
   text-align: left;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 8px;
 }
 
 .photos__upload-time {

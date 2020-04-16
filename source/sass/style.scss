@@ -1,6 +1,8 @@
 @import "fonts.scss";
 @import "mixins.scss";
 @import "global.scss";
+@import "slider.scss";
+@import "buttons.scss";
 @import "page-header.scss";
 @import "main-nav.scss";
 @import "site-list.scss";
@@ -8,9 +10,24 @@
 @import "introduction.scss";
 @import "download.scss";
 @import "features.scss";
+@import "reviews.scss";
+@import "rates.scss";
+@import "rates-options.scss";
+@import "contacts.scss";
+@import "map.scss";
 
 @import "user-photos.scss";
 @import "photos.scss";
+@import "upload.scss";
 @import "page-footer.scss";
 @import "social.scss";
 @import "copyright.scss";
+
+@import "contest.scss";
+@import "fields.scss";
+@import "text-fields.scss";
+@import "checkbox-fields.scss";
+@import "radio-fields.scss";
+@import "comment-fields.scss";
+
+@import "modal.scss";

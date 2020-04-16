@@ -94,7 +94,7 @@
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о приложении</h2>
           <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item reviews__item--active slider__item slider__item--active">
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
@@ -108,9 +108,15 @@
             </blockquote>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <button class="reviews__toggle" type="button">1</button>
-            <button class="reviews__toggle" type="button">2</button>
-            <button class="reviews__toggle" type="button">3</button>
+            <button class="reviews__toggle slider__toggle slider__toggle--active" type="button">
+              <span class="visually-hidden">1</span>
+            </button>
+            <button class="reviews__toggle slider__toggle" type="button">
+              <span class="visually-hidden">2</span>
+            </button>
+            <button class="reviews__toggle slider__toggle" type="button">
+              <span class="visually-hidden">3</span>
+            </button>
           </p>
         </div>
       </section>
@@ -118,29 +124,42 @@
         <div class="rates__wrapper slider">
           <h2 class="visually-hidden">Тарифы</h2>
           <ul class="rates__list">
-            <li class="rates__item item-rates">
-              <h3 class="item-rates__title">Стандарт</h3>
-              <span class="item-rates__price">3,99 USD</span>
-              <span class="item-rates__best">Хит</span>
-              <ul class="item-rates__list options">
-                <li class="options__item options__item--on">Розовый фильтр
-                  <span class="visually-hidden">Да</span>
+            <li class="rates__item item-rates slider__item"></li>
+            <li class="rates__item item-rates item-rates--active slider__item slider__item--active">
+              <div class="item-rates__header">
+                <h3 class="item-rates__title">Стандарт</h3>
+                <span class="item-rates__price">3,99 USD</span>
+                <div class="item-rates__best">
+                  <span class="item-rates__best-text">Хит</span>
+                </div>
+              </div>
+              <ul class="item-rates__list rates-options">
+                <li class="rates-options__item">
+                  <p class="rates-options__name">Розовый фильтр</p>
+                  <p class="rates-options__value rates-options__value--on"><span class="visually-hidden">Да</span></p>
                 </li>
-                <li class="options__item options__item--on">Смайлики
-                  <span class="visually-hidden">Да</span>
+                <li class="rates-options__item rates-options__item--on">
+                  <p class="rates-options__name">Смайлики</p>
+                  <p class="rates-options__value rates-options__value--on"><span class="visually-hidden">Да</span></p>
                 </li>
-                <li class="options__item options__item--off">Комментарии
-                  <span class="visually-hidden">Нет</span>
+                <li class="rates-options__item">
+                  <p class="rates-options__name">Комментарии</p>
+                  <p class="rates-options__value rates-options__value--off"><span class="visually-hidden">Нет</span></p>
                 </li>
               </ul>
             </li>
-            <li class="rates__item"></li>
-            <li class="rates__item"></li>
+            <li class="rates__item item-rates slider__item"></li>
           </ul>
           <p class="rates__toggles slider__toggles">
-            <button class="rates__toggle" type="button">1</button>
-            <button class="rates__toggle" type="button">2</button>
-            <button class="rates__toggle" type="button">3</button>
+            <button class="rates__toggle slider__toggle slider__toggle--active" type="button">
+              <span class="visually-hidden">1</span>
+            </button>
+            <button class="rates__toggle slider__toggle" type="button">
+              <span class="visually-hidden">2</span>
+            </button>
+            <button class="rates__toggle slider__toggle" type="button">
+              <span class="visually-hidden">3</span>
+            </button>
           </p>
         </div>
       </section>
@@ -148,19 +167,15 @@
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Контактная информация</h2>
           <p class="contacts__description">Остались вопросы? Свяжитесь с нами!</p>
-          <div class="contacts__phone">
+          <div class="contacts__item">
             <p class="contacts__text">Звоните:</p>
-            <p class="contacts__value">
-              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </p>
+            <a class="contacts__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </div>
-          <div class="contacts__e-mail">
+          <div class="contacts__item">
             <p class="contacts__text">Пишите:</p>
-            <p class="contacts__value">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
+            <a class="contacts__value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
-          <div class="contacts__address">
+          <div class="contacts__item">
             <p class="contacts__text">Приезжайте в гости:</p>
             <address class="contacts__value">ул. Большая Конюшенная, 19/8</address>
           </div>
@@ -169,7 +184,7 @@
       <section class="map">
         <div class="map__wrapper">
           <h2 class="visually-hidden">Адрес компании: Санкт-Петербург, ул. Большая Конюшенная, 19/8</h2>
-          <iframe></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1586865332672!5m2!1sru!2sru" width="100%" height="645" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
     </main>

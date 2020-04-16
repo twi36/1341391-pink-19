@@ -1,0 +1,28 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 0;
+
+  background: #ffffff;
+  padding-top: 46px;
+  padding-right: 22px;
+  padding-bottom: 46px;
+  padding-left: 22px;
+}
+
+.modal--success {
+  top: 60%;
+  background-image: linear-gradient(#ffffff 60%, #f2f2f2 60%);
+}
+
+.modal__title {
+  @include font(18px, 24px, 700, #000000);
+  text-align: center;
+}
+
+.modal__text {
+  @include font(14px, 24px, 400, #283645);
+  text-align: center;
+  margin-bottom: 37px;
+}

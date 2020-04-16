@@ -5,6 +5,7 @@
 
 .page-title {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-size: cover;
   @include font(24px, 28px, 300, #ffffff);
   text-align: center;
   padding: 20px;

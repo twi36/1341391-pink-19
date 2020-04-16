@@ -1,0 +1,19 @@
+.fields {
+  position: relative;
+  @include list-reset;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.fields__title {
+  position: absolute;
+  top: 43px;
+  left: 0;
+  @include reset;
+  @include font(14px, 18px, 400, #d22856);
+  text-align: center;
+  text-transform: uppercase;
+  padding-right: 50px;
+  padding-left: 50px;
+}
