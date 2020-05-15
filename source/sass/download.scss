@@ -1,16 +1,5 @@
 .download {
   background-color: #1d2631;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -285px;
-    left: 0;
-    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-    width: 320px;
-    height: 314px;
-  }
 }
 
 .download__list {
@@ -28,6 +17,7 @@
 
 .download__item {
   width: 25%;
+  display: flex;
 }
 
 .download__item--main-store {
@@ -38,6 +28,8 @@
 }
 
 .download__link {
+  margin: auto;
+  margin-bottom: 0;
   display: block;
   text-align: center;
 
@@ -82,4 +74,35 @@
   margin-right: 40px;
   margin-left: 40px;
   padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    background-color: transparent;
+  }
+
+  .download__list {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+
+  .download__item--main-store {
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
+
+  .download__description {
+    @include font(18px, 24px, 300, #ffffff);
+    @include reset;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download__list {
+    margin-bottom: 60px;
+  }
+
+  .download__item--main-store {
+    margin-bottom: 65px;
+  }
 }

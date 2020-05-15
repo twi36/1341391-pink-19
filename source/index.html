@@ -59,7 +59,7 @@
               <li class="download__item">
                 <a class="download__link download__link--android" href="https://play.google.com/store"><span class="visually-hidden">Google Play</span></a>
               </li>
-              <li class="download_item">
+              <li class="download__item">
                 <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows"><span class="visually-hidden">Microsoft Store</span></a>
               </li>
             </ul>
@@ -68,26 +68,37 @@
         </div>
       </section>
       <section class="features">
-        <div class="features__wrapper">
+        <div class="features__title">
           <h2 class="visually-hidden">Возможности приложения PINK</h2>
           <div class="features__description">
             <p class="features__text">Устали от серости мегаполиса?</p>
             <p class="features__text">Нам есть, что вам предложить!</p>
           </div>
-          <ul class="features__list">
-            <li class="features__item item-feature item-feature--gray">
-              <h3 class="item-feature__title">Поднимает настроение</h3>
-              <p class="item-feature__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="features__item item-feature item-feature--pink">
-              <h3 class="item-feature__title">Меняет мир вокруг</h3>
-              <p class="item-feature__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="features__item item-feature item-feature--smile">
-              <h3 class="item-feature__title">Заводит новых друзей</h3>
-              <p class="item-feature__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
+        </div>
+        <div class="features__background">
+          <div class="features__wrapper">
+            <ul class="features__list">
+              <li class="features__item item-feature item-feature--gray">
+                <h3 class="item-feature__title">Поднимает настроение</h3>
+                <p class="item-feature__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="features__item item-feature item-feature--pink">
+                <h3 class="item-feature__title">Меняет мир вокруг</h3>
+                <p class="item-feature__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="features__item item-feature item-feature--smile">
+                <h3 class="item-feature__title">Заводит новых друзей</h3>
+                <p class="item-feature__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="features__effect effect">
+          <div class="effect__wrapper">
+            <h3 class="effect__title">Эффект на 24 часа!</h3>
+            <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
       <section class="reviews">
@@ -124,31 +135,69 @@
         <div class="rates__wrapper slider">
           <h2 class="visually-hidden">Тарифы</h2>
           <ul class="rates__list">
-            <li class="rates__item item-rates slider__item"></li>
-            <li class="rates__item item-rates item-rates--active slider__item slider__item--active">
-              <div class="item-rates__header">
-                <h3 class="item-rates__title">Стандарт</h3>
-                <span class="item-rates__price">3,99 USD</span>
-                <div class="item-rates__best">
-                  <span class="item-rates__best-text">Хит</span>
-                </div>
+            <li class="rates__item slider__item">
+              <div class="rates__header">
+                <h3 class="rates__title">База</h3>
+                <span class="rates__price">1,99 USD</span>
               </div>
-              <ul class="item-rates__list rates-options">
-                <li class="rates-options__item">
-                  <p class="rates-options__name">Розовый фильтр</p>
-                  <p class="rates-options__value rates-options__value--on"><span class="visually-hidden">Да</span></p>
+              <ul class="rates__options-list">
+                <li class="rates__options-item">
+                  <p class="rates__options-name">Розовый фильтр</p>
+                  <p class="rates__options-value rates__options-value--on"><span class="visually-hidden">Да</span></p>
                 </li>
-                <li class="rates-options__item rates-options__item--on">
-                  <p class="rates-options__name">Смайлики</p>
-                  <p class="rates-options__value rates-options__value--on"><span class="visually-hidden">Да</span></p>
+                <li class="rates__options-item">
+                  <p class="rates__options-name">Смайлики</p>
+                  <p class="rates__options-value rates__options-value--off"><span class="visually-hidden">Нет</span></p>
                 </li>
-                <li class="rates-options__item">
-                  <p class="rates-options__name">Комментарии</p>
-                  <p class="rates-options__value rates-options__value--off"><span class="visually-hidden">Нет</span></p>
+                <li class="rates__options-item">
+                  <p class="rates__options-name">Комментарии</p>
+                  <p class="rates__options-value rates__options-value--off"><span class="visually-hidden">Нет</span></p>
                 </li>
               </ul>
             </li>
-            <li class="rates__item item-rates slider__item"></li>
+            <li class="rates__item rates__item--active slider__item slider__item--active">
+              <div class="rates__header">
+                <h3 class="rates__title">Стандарт</h3>
+                <span class="rates__price">3,99 USD</span>
+                <div class="rates__best">
+                  <span class="rates__best-text">Хит</span>
+                </div>
+              </div>
+              <ul class="rates__options-list">
+                <li class="rates__options-item">
+                  <p class="rates__options-name">Розовый фильтр</p>
+                  <p class="rates__options-value rates__options-value--on"><span class="visually-hidden">Да</span></p>
+                </li>
+                <li class="rates__options-item">
+                  <p class="rates__options-name">Смайлики</p>
+                  <p class="rates__options-value rates__options-value--on"><span class="visually-hidden">Да</span></p>
+                </li>
+                <li class="rates__options-item">
+                  <p class="rates__options-name">Комментарии</p>
+                  <p class="rates__options-value rates__options-value--off"><span class="visually-hidden">Нет</span></p>
+                </li>
+              </ul>
+            </li>
+            <li class="rates__item item-rates slider__item">
+              <div class="rates__header">
+                <h3 class="rates__title">Анлим</h3>
+                <span class="rates__price">9,99 USD</span>
+              </div>
+              <ul class="rates__options-list">
+                <li class="rates__options-item">
+                  <p class="rates__options-name">Розовый фильтр</p>
+                  <p class="rates__options-value rates__options-value--on"><span class="visually-hidden">Да</span></p>
+                </li>
+                <li class="rates__options-item">
+                  <p class="rates__options-name">Смайлики</p>
+                  <p class="rates__options-value rates__options-value--on"><span class="visually-hidden">Да</span></p>
+                </li>
+                <li class="rates__options-item">
+                  <p class="rates__options-name">Комментарии</p>
+                  <p class="rates__options-value rates__options-value--on"><span class="visually-hidden">Да</span></p>
+                </li>
+              </ul>
+            </li>
           </ul>
           <p class="rates__toggles slider__toggles">
             <button class="rates__toggle slider__toggle slider__toggle--active" type="button">

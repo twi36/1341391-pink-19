@@ -26,6 +26,25 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-list__item {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .site-list__link {
+    @include font(18px, 18px, 400, #ffffff);
+    text-transform: none;
+  }
+}
+
 /**.site-list__link--active {
   border-bottom: 2px solid #ffffff;
 }**/
