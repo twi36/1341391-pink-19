@@ -1,0 +1,196 @@
+.contest-form__fields {
+  position: relative;
+  @include list-reset;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__fields-title {
+  position: absolute;
+  top: 43px;
+  left: 0;
+  @include reset;
+  @include font(14px, 18px, 400, #d22856);
+  text-align: center;
+  text-transform: uppercase;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.contest-form__fields--name,
+.contest-form__fields--contacts {
+  padding-top: 23px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.contest-form__label--name,
+.contest-form__label--contacts {
+  @include font(14px, 30px, 400, #d22856);
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-left: 22px;
+}
+
+.contest-form__input--name,
+.contest-form__input--contacts {
+  display: block;
+  @include font(18px, 30px, 400, #283645);
+  text-align: left;
+  border: 2px solid #e5e5e5;
+  padding-top: 14px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  margin-bottom: 17px;
+  width: 280px;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: #283645;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
+  }
+}
+
+.contest-form__fields--achievements {
+  padding-top: 122px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f2f2f2;
+}
+
+.contest-form__input--achievements {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.contest-form__label--achievements {
+  position: relative;
+  padding-left: 70px;
+  padding-bottom: 52px;
+  @include font(18px, 30px, 400, #283645);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
+}
+
+.contest-form__input--achievements:checked + .contest-form__label--achievements::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 22px;
+  height: 16px;
+  background: url("../img/icon-yes.svg") no-repeat;
+}
+
+.contest-form__fields--apps {
+  padding-top: 122px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f2f2f2;
+}
+
+.contest-form__input--apps {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.contest-form__label--apps {
+  position: relative;
+  padding-left: 70px;
+  padding-bottom: 52px;
+  @include font(18px, 30px, 400, #283645);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 37px;
+    height: 36px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
+}
+
+.contest-form__input--apps:checked + .contest-form__label--apps::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d22856;
+}
+
+.contest-form__fields--emotions {
+  padding-top: 80px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.contest-form__input--emotions {
+  display: block;
+  @include font(18px, 30px, 400, #283645);
+  text-align: left;
+  border: 2px solid #e5e5e5;
+  padding-top: 14px;
+  padding-right: 18px;
+  padding-bottom: 32px;
+  padding-left: 18px;
+  margin-bottom: 17px;
+  width: 280px;
+  box-sizing: border-box;
+  resize: none;
+
+  &::placeholder {
+    color: #283645;
+  }
+}

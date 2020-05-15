@@ -4,6 +4,21 @@
   margin-left: auto;
 }
 
+@mixin mobile-container {
+  width: auto;
+  padding: 0 20px;
+}
+
+@mixin tablet-container {
+  width: auto;
+  padding: 0 20px;
+}
+
+@mixin desktop-container {
+  width: auto;
+  padding: 0 130px;
+}
+
 @mixin reset {
   margin: 0;
   padding: 0;

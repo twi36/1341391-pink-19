@@ -1,12 +1,14 @@
 .main-nav {
   box-sizing: content-box;
   position: relative;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: -47px;
-  right: 20px;
+  top: -50px;
+  right: 13px;
 
   border: 0;
   background-color: #283645;
@@ -21,5 +23,27 @@
   &:active {
     color: #d22856;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__toggle {
+    top: -67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }

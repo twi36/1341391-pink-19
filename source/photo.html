@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--menu-closed">
       <a class="page-header__logo">
         <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
           <g>
@@ -53,9 +53,8 @@
               <li class="photos__item photos__item--current">
                 <div class="photos__image-block">
                   <img class="photos__image photos__image--current" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
-                  <span class="photos__of-the-day">Панорама дня</span>
                 </div>
-                <div class="photos__info">
+                <div class="photos__info photos__info--current">
                   <p class="photos__author">Анна
                     <span class="photos__upload-time">(5 минут назад)</span>
                   </p>
@@ -63,78 +62,80 @@
                   <span class="photos__likes">Нравится: 215</span>
                 </div>
               </li>
-              <li class="photos__item">
-                <div class="photos__image-block">
-                  <img class="photos__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя - автомобиль">
-                </div>
-                <div class="photos__info">
-                  <p class="photos__author">Левон
-                    <span class="photos__upload-time">(5 часов назад)</span>
-                  </p>
-                  <p class="photos__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                  <span class="photos__likes">Нравится: 356</span>
-                </div>
-              </li>
-              <li class="photos__item">
-                <div class="photos__image-block">
-                  <img class="photos__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя - ударная установка">
-                </div>
-                <div class="photos__info">
-                  <p class="photos__author">Антон
-                    <span class="photos__upload-time">(12 часов назад)</span>
-                  </p>
-                  <p class="photos__description">Соседи будут рады!</p>
-                  <span class="photos__likes">Нравится: 666</span>
-                </div>
-              </li>
-              <li class="photos__item">
-                <div class="photos__image-block">
-                  <img class="photos__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя - окно">
-                </div>
-                <div class="photos__info">
-                  <p class="photos__author">Борис
-                    <span class="photos__upload-time">(20 часов назад)</span>
-                  </p>
-                  <p class="photos__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                  <span class="photos__likes">Нравится: 215</span>
-                </div>
-              </li>
-              <li class="photos__item">
-                <div class="photos__image-block">
-                  <img class="photos__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя - ярмарка">
-                </div>
-                <div class="photos__info">
-                  <p class="photos__author">Сергей
-                    <span class="photos__upload-time">(25 часов назад)</span>
-                  </p>
-                  <p class="photos__description">Самая кубанская в мире!</p>
-                  <span class="photos__likes">Нравится: 4</span>
-                </div>
-              </li>
-              <li class="photos__item">
-                <div class="photos__image-block">
-                  <img class="photos__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя - вид от первого лица">
-                </div>
-                <div class="photos__info">
-                  <p class="photos__author">Максим
-                    <span class="photos__upload-time">(40 часов назад)</span>
-                  </p>
-                  <p class="photos__description">Где снег-то?</p>
-                  <span class="photos__likes">Нравится: 150</span>
-                </div>
-              </li>
-              <li class="photos__item">
-                <div class="photos__image-block">
-                  <img class="photos__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя - крыло самолета">
-                </div>
-                <div class="photos__info">
-                  <p class="photos__author">Надежда
-                    <span class="photos__upload-time">(45 часов назад)</span>
-                  </p>
-                  <p class="photos__description">Всем GM и взаимные лайки!</p>
-                  <span class="photos__likes">Нравится: 2560</span>
-                </div>
-              </li>
+              <div class="photos__wrapper">
+                <li class="photos__item">
+                  <div class="photos__image-block">
+                    <img class="photos__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя - автомобиль">
+                  </div>
+                  <div class="photos__info">
+                    <p class="photos__author">Левон
+                      <span class="photos__upload-time">(5 часов назад)</span>
+                    </p>
+                    <p class="photos__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                    <span class="photos__likes">Нравится: 356</span>
+                  </div>
+                </li>
+                <li class="photos__item">
+                  <div class="photos__image-block">
+                    <img class="photos__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя - ударная установка">
+                  </div>
+                  <div class="photos__info">
+                    <p class="photos__author">Антон
+                      <span class="photos__upload-time">(12 часов назад)</span>
+                    </p>
+                    <p class="photos__description">Соседи будут рады!</p>
+                    <span class="photos__likes">Нравится: 666</span>
+                  </div>
+                </li>
+                <li class="photos__item">
+                  <div class="photos__image-block">
+                    <img class="photos__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя - окно">
+                  </div>
+                  <div class="photos__info">
+                    <p class="photos__author">Борис
+                      <span class="photos__upload-time">(20 часов назад)</span>
+                    </p>
+                    <p class="photos__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                    <span class="photos__likes">Нравится: 215</span>
+                  </div>
+                </li>
+                <li class="photos__item">
+                  <div class="photos__image-block">
+                    <img class="photos__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя - ярмарка">
+                  </div>
+                  <div class="photos__info">
+                    <p class="photos__author">Сергей
+                      <span class="photos__upload-time">(25 часов назад)</span>
+                    </p>
+                    <p class="photos__description">Самая кубанская в мире!</p>
+                    <span class="photos__likes">Нравится: 4</span>
+                  </div>
+                </li>
+                <li class="photos__item">
+                  <div class="photos__image-block">
+                    <img class="photos__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя - вид от первого лица">
+                  </div>
+                  <div class="photos__info">
+                    <p class="photos__author">Максим
+                      <span class="photos__upload-time">(40 часов назад)</span>
+                    </p>
+                    <p class="photos__description">Где снег-то?</p>
+                    <span class="photos__likes">Нравится: 150</span>
+                  </div>
+                </li>
+                <li class="photos__item">
+                  <div class="photos__image-block">
+                    <img class="photos__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя - крыло самолета">
+                  </div>
+                  <div class="photos__info">
+                    <p class="photos__author">Надежда
+                      <span class="photos__upload-time">(45 часов назад)</span>
+                    </p>
+                    <p class="photos__description">Всем GM и взаимные лайки!</p>
+                    <span class="photos__likes">Нравится: 2560</span>
+                  </div>
+                </li>
+              </div>
             </ul>
           </div>
         </div>

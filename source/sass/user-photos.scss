@@ -11,3 +11,24 @@
   @include font(14px, 30px, 400, #283645);
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .user-photos__description {
+    padding-top: 57px;
+    padding-right: 110px;
+    padding-bottom: 58px;
+    padding-left: 110px;
+
+    @include font(18px, 30px, 400, #283645);
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-photos__description {
+    padding-top: 59px;
+    padding-right: 314px;
+    padding-bottom: 70px;
+    padding-left: 314px;
+  }
+}

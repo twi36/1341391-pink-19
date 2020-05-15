@@ -6,23 +6,6 @@
   margin-bottom: 20px;
 }
 
-.photos__item--current {
-  position: relative;
-}
-
-.photos__of-the-day {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  padding-top: 6px;
-  padding-right: 20px;
-  padding-bottom: 6px;
-  padding-left: 20px;
-  background-color: #d22856;
-  @include font(12px, 24px, 700, #ffffff);
-  text-transform: uppercase;
-}
-
 .photos__image-block {
   text-align: center;
 }
@@ -32,8 +15,25 @@
 }
 
 .photos__image--current {
+  position: relative;
   margin-right: 0;
   margin-left: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding-top: 6px;
+    padding-right: 20px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    background-color: #d22856;
+    @include font(12px, 24px, 700, #ffffff);
+    text-transform: uppercase;
+    width: 140px;
+    height: 36px;
+  }
 }
 
 .photos__info {
@@ -80,5 +80,107 @@
     width: 13px;
     height: 12px;
     background: url("../img/icon-heart.svg") no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photos__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .photos__item {
+    width: 300px;
+  }
+
+  .photos__item--current {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 50px;
+  }
+
+  /** Временно **/
+  .photos__image {
+    width: 300px;
+    height: 300px;
+  }
+
+  /** Временно **/
+  .photos__image--current {
+    width: 660px;
+    height: 509px;
+  }
+
+  .photos__info {
+    margin: 0;
+  }
+
+  .photos__info {
+    min-height: 127px;
+  }
+
+  .photos__info--current {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 28px;
+    margin-right: 20px;
+    margin-left: 20px;
+    min-height: 90px;
+  }
+
+  .photos__description {
+    order: 3;
+  }
+
+  .photos__likes {
+    order: 2;
+    padding-left: 0;
+    padding-right: 32px;
+
+    &::before {
+      top: 2px;
+      left: 103px;;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__wrapper {
+    margin-right: 130px;
+    margin-left: 130px;
+  }
+
+  .photos__item {
+    margin-bottom: 53px;
+  }
+
+  .photos__item--current {
+    margin: 0;
+  }
+
+  /** Временно **/
+  .photos__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  /** Временно **/
+  .photos__image--current {
+    width: 1200px;
+    height: 506px;
+  }
+
+  .photos__info--current {
+    margin-right: 130px;
+    margin-left: 130px;
+    min-height: 65px;
   }
 }
